@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>comment Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div id="container">
+
+        <div id="content">
+
+          <h1> Golf Survey </h1>
+
+
+          <form action ="mailto:romariod.bishop@mybcc.edu.bb" method ="post" enctype = "text/plain">
+            <label for="fname"> Please give us your name: </label>
+            <input type="text" id="fname" name="flname" size="30">
+            <br/>
+            <br/>
+
+            <label for="golfyes"> Do you like golf? </label>
+            <input type="radio" name="golf" id="goflyes" value="yes" required ><span> Yes</span>
+            <input type="radio" name="golf" id="goflyes" value="no" required > <span> No</span>
+
+            <p>Which course do you like yo play?</p>
+            <input type="checkbox" name="check" value="Kapalua"/> <span> Kapalua</span> <br/>
+            <input type="checkbox" name="check" value="St. Andrews"/> <span> St. Andrews </span> <br/>
+            <input type="checkbox" name="check" value="Muirfield"/> <span> Muirfield </span> <br/>
+            <input type="checkbox" name="check" value="La Paloma" /><span> La Paloma</span>  <br/>
+            <br/>
+            <label> In what month do you play your best golf? </label>
+
+            <select name="month">
+              <option value="January">January</option>
+              <option value="February"> February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="August">August</option>
+              <option value="September">September</option>
+              <option value="October">October</option>
+              <option value="November">November</option>
+              <option value="December">December</option>
+           </select>
+           <br/>
+           <br/>
+           <label for="accessories"> What golf accessories do you need in the next year? </label>
+           <br/>
+           <textarea id="accessories" rows="3" cols="50"> </textarea>
+           <br/>
+           <br/>
+           <br/>
+           <input type="reset" value="Reset the form"/>
+
+           <input type="submit" value="Submit the form" />
+
+          </form>
+        </div>
+</div>
+
+</body>
+</html>
